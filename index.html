@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  	<meta charset="utf-8">
+
+  	<title>Final Project Great Race</title>
+
+	<! -- Author: Jeffrey Chace, M00262162       -->
+	<! -- Date: 8 December 2020                  -->
+	<! -- Class: ITC470-896-FA20                 -->
+	<! -- Instructor: Dr. Tiffany Ford           -->
+	<! -- Institution: Missouri State University -->
+	<! -- filename: index.html                   -->
+
+  	<meta name="description" content="Final Project Great Race">
+  	
+	<link rel="stylesheet" href="resources/css/raceStyles.css">
+  	<script src="resources/js/raceScripts.js"></script>
+	<link rel="icon" href="resources/images/AmpelmannIcon.jpg">
+
+</head>
+
+<body>
+	<table>
+	   <table border="5" bordercolor="black"; style="border-collapse: collapse; width: 100%;">
+	      <tbody>
+	         <tr>
+		    <td style="width: 35%; text-align: center;border-left: 0;border-right: 0;">
+		       <h1>
+		       	Welcome to the Ultimate Racing Smackdown
+		       </h1>
+		    </td>
+
+		    <td style="width: 10%;border-left: 0;border-right: 0;">
+                       <img src="resources/images/arrow.gif" width = "150" height = "60" align="right">
+                    </td>
+
+		    <td style="width: 7%; text-align: center; border-left: 0;border-right: 0;">                     
+			<img id="redgreen" onclick="startRace()" src="resources/images/AmpelmannRed.jpg" width = "85" height = "180">
+                    </td>
+
+                    <td style="width: 28%; border-left: 0;border-right: 0;">
+                       <h2>
+                       <i>Comatose Schumacher</i><br>vs.<br><i>Little Kiddie</i>
+			</h2> 
+			<p>                       
+			<br>Click the traffic light<br> to start the race
+                       </p>
+                    </td>
+
+                    <td style="width: 20%; text-align: center;border-left: 0;border-right: 0;">
+			<img src="resources/images/flags.png" width = "170" height = "170"><br>
+                    </td>
+		 </tr>
+	      </tbody>
+	</table>
+
+	<table>
+	   <table style="border-collapse: collapse; width: 100%; height: 300px";>
+	      <tbody>
+		 <tr>
+		    <td style="width: 100%;" background ="resources/images/background1.jpg">
+    			<img id="car1" src="resources/images/ferrari.png" width="220" height="160">
+		    </td>
+		 </tr>
+
+		 <tr>
+		    <td style="width: 100%;" background ="resources/images/background2.jpg">
+			<img id="car2" src="resources/images/kidcar.png" width="220" height="115">
+		    </td>
+		 </tr>
+	      </tbody>
+	</table>
+
+
+
+	<div id="winner">
+		<img id="winImg" border="2px" onClick="hideWinner()" margin=auto width=auto> 
+	</div>
+	<br>
+	<div class="turbotip">
+		<button class="button buttonTurbo" onclick="turboCharge()">Kiddie Turbo-boost</button>
+		<span class="turbotiptext">
+			Normally, it's a fair race. But, if you want to give Kiddie a turbo boost 
+			so he beats Schumacher every time, click this button before or during the race.
+		</span>
+	</div>
+
+</body>
+
+</html>

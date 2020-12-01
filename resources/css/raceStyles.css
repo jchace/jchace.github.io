@@ -1,0 +1,133 @@
+@charset "utf-8";
+
+/*
+
+  Author:      Jeffrey Chace, M00262162       
+  Date:        8 December 2020                  
+  Class:       ITC470-896-FA20                 
+  Instructor:  Dr. Tiffany Ford           
+  Institution: Missouri State University 
+  Filename:    raceStyles.css
+
+*/
+
+body {
+  background-color: #004225;
+}
+
+h1 {
+  color: red;
+  text-shadow: 4px 4px #000000;
+  font-family: 'Showcard Gothic';
+  font-size: 32px;
+  text-align: center;
+}
+
+h2 {
+  color: white;
+  text-shadow: 3px 3px #000000;
+  font-family: 'Times New Roman';
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+p {
+  color: white;
+  font-family: 'Arial';
+  font-size: 14px;
+  text-align: center;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+#redgreen {
+  cursor: pointer;
+}
+
+#car1 {
+  position: relative;
+}
+
+#car2 {
+  position: relative;
+}
+
+#winImg {
+  cursor: pointer;
+}
+
+#winner {
+  border: solid 5px #000000;
+  position: absolute;
+  top: 80px;
+  left: 35%;
+  width: 300px;
+  height: 300px;
+  display: none;
+  z-index: 99;
+}
+
+.button {
+  background-color: red;
+  border: 2px solid black;
+  border-radius: 8px;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 1px 1px;
+  opacity: 0.6;
+  cursor: pointer;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.buttonTurbo:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  opacity: 1;
+}
+
+.turbotip {
+  position: relative;
+  display: inline-block;
+}
+
+.turbotip .turbotiptext {
+  visibility: hidden;
+  width: 130px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+  border-radius: 5px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.turbotip .turbotiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.turbotip:hover .turbotiptext {
+  visibility: visible;
+  opacity: 1;
+}
