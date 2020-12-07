@@ -16,7 +16,7 @@ var advance1 = 0;
 var advance2 = 0;
 var runRace;
 var winPic;
-var randomNumRange = 15;
+var randomNumRange = 12;
 
 // Function to start the race
 
@@ -65,17 +65,18 @@ function setIntervalAndFire() {
 }
 
 // Function to generate random number 
-// between 0-15 and increment to move car1
+// between 0-12 and increment to move car1
 
 function racer1() {
 
-    raceVar1 = Math.floor((Math.random() * 15) + 1);
+    raceVar1 = Math.floor((Math.random() * 12) + 1);
     advance1 = advance1 + raceVar1;
     car1.style.left = advance1 + 'px';
 }
 
 // Function to generate random number 
-// between 0-15 and increment to move car2
+// between 0-12 based on var randomNumRange 
+// and increment to move car2
 
 function racer2() {
 
