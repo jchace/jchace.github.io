@@ -17,7 +17,6 @@ var advance2 = 0;
 var runRace;
 var winPic;
 var randomNumRange = 10;
-var windowSizeStop = (window.screen.width * window.devicePixelRatio);
 
 // Function to start the race
 
@@ -46,14 +45,14 @@ function setIntervalAndFire() {
         // Check to see if car1 has reached the 
         // window right side and declare winner
 
-        if ((advance1) >= (windowSizeStop - 220)) {
+        if ((advance1) >= (window.innerWidth - 220)) {
             clearInterval(runRace);
             showWinner("resources/images/ferrariWins.png");
             
         // Check to see if car2 has reached the 
         // window right side and declare winner
 
-        } else if ((advance2) >= (windowSizeStop - 220)) {
+        } else if ((advance2) >= (window.innerWidth - 220)) {
             clearInterval(runRace);
             showWinner("resources/images/kidcarWins.png");
             
