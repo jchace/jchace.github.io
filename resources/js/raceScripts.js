@@ -58,8 +58,9 @@ function setIntervalAndFire() {
             
         }
 
-        racer1();
-        racer2();
+       racer2();        
+       racer1();
+        
 
     }, 20);
 }
