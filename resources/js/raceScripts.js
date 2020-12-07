@@ -16,7 +16,7 @@ var advance1 = 0;
 var advance2 = 0;
 var runRace;
 var winPic;
-var randomNumRange = 10;
+var randomNumRange = 15;
 
 // Function to start the race
 
@@ -37,7 +37,7 @@ function changeImage() {
 }
 
 // Function to set the interval "runRace" firing every 
-// 25 miliseconds and then clear it based on conditions 
+// 20 miliseconds and then clear it based on conditions 
 
 function setIntervalAndFire() {
     runRace = setInterval(function() {
@@ -65,17 +65,17 @@ function setIntervalAndFire() {
 }
 
 // Function to generate random number 
-// between 0-17 and increment to move car1
+// between 0-15 and increment to move car1
 
 function racer1() {
 
-    raceVar1 = Math.floor((Math.random() * 10) + 1);
+    raceVar1 = Math.floor((Math.random() * 15) + 1);
     advance1 = advance1 + raceVar1;
     car1.style.left = advance1 + 'px';
 }
 
 // Function to generate random number 
-// between 0-17 and increment to move car2
+// between 0-15 and increment to move car2
 
 function racer2() {
 
@@ -84,7 +84,7 @@ function racer2() {
     car2.style.left = advance2 + 'px';
 }
 
-// Function to give Kiddie a Turbo boost
+// Function to give Kiddie a Turbo boost by increasing his random number range to 25
 
 function turboCharge(){
 
